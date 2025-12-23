@@ -1,11 +1,11 @@
 <?php
-// news.php - страница одной новости
+
 require_once 'config.php';
 
-// Получаем ID новости из URL
+
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
-// Получаем новость из базы данных
+
 if($id > 0) {
     $stmt = $pdo->prepare("SELECT * FROM news WHERE id = ?");
     $stmt->execute([$id]);

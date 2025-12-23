@@ -1,12 +1,12 @@
 <?php
-// index.php - главная страница
+
 require_once 'config.php';
 
-// Получаем все новости из БД, отсортированные по дате (новые сверху)
+
 $stmt = $pdo->query("SELECT * FROM news ORDER BY date DESC");
 $news = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// Первая новость - для главной картинки
+
 $mainNews = !empty($news) ? $news[0] : null;
 ?>
 

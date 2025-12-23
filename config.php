@@ -1,5 +1,5 @@
 <?php
-// config.php
+
 $host = 'localhost';
 $dbname = 'galactic_news';
 $username = 'root';
