@@ -52,7 +52,7 @@ $mainNews = !empty($news) ? $news[0] : null;
         <p><?php echo strip_tags($item['announce']); ?></p>
         
         <?php if($currentPage == 1 && $index == 0): ?>
-        <!-- Только первая новость на первой странице имеет рабочую кнопку -->
+   
         <a href="news.php?id=<?php echo $item['id']; ?>" class="moreDetails-btn">
             ПОДРОБНЕЕ <img src="images/icons/whiteArrow.png" alt="">
         </a>
@@ -97,3 +97,4 @@ $mainNews = !empty($news) ? $news[0] : null;
         </footer>
     </body>
 </html>
+
